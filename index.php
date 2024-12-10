@@ -1,3 +1,12 @@
+<?php
+session_start(); 
+
+if (isset($_SESSION['name']) && isset($_SESSION['nim'])) {
+    header("Location: quiz.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
